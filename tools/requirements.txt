@@ -1,0 +1,5 @@
+# Нужны только для подготовки ресурсов (prepare_fonts.py, prepare_audio.py, pack_sprites.py).
+# Сама сборка tools/build.py работает на чистом Python 3.
+pillow>=10
+fonttools>=4.40
+imageio-ffmpeg>=0.5

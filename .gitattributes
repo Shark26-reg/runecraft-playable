@@ -1,0 +1,11 @@
+# Переводы строк — LF в репозитории
+* text=auto eol=lf
+*.webp binary
+*.mp3 binary
+*.woff binary
+*.jpg binary
+*.zip binary
+# Собранные файлы не считаются в статистике языков GitHub (иначе репозиторий выглядит «на HTML»)
+dist/** linguist-generated=true
+docs/index.html linguist-generated=true
+src/assets/** linguist-vendored=true

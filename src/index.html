@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>RuneCraft Survivor — playable</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <canvas id="game"></canvas>
+  <div id="vignette"></div>
+
+  <div id="hud" class="hidden">
+    <div id="topbar">
+      <button id="btn-sound" class="icon-btn" type="button"></button>
+      <div id="wave-box">
+        <div id="wave-label"></div>
+        <div id="xp-bar"><i></i></div>
+        <div id="xp-label"></div>
+      </div>
+      <button id="btn-cta-top" class="btn btn-gold btn-small" type="button" data-i18n="cta_short"></button>
+    </div>
+    <div id="kills"><span class="skull"></span><b id="kill-count">0</b></div>
+    <div id="boss-bar" class="hidden"><div class="boss-name" data-i18n="boss_name"></div><div class="bar"><i></i></div></div>
+    <div id="spells"></div>
+  </div>
+
+  <div id="banner"></div>
+  <div id="spell-pop"></div>
+  <div id="hint" class="hidden"><div class="finger"></div><div class="hint-text"></div></div>
+  <div id="stick" class="hidden"><div class="knob"></div></div>
+
+  <div id="craft" class="hidden">
+    <div class="panel">
+      <div class="title" data-i18n="craft_title"></div>
+      <div class="subtitle" data-i18n="craft_sub"></div>
+      <div id="craft-runes"></div>
+      <div id="craft-result"></div>
+      <div id="craft-msg"></div>
+      <button id="btn-fight" class="btn btn-purple hidden" type="button" data-i18n="to_battle"></button>
+    </div>
+    <div id="craft-finger" class="finger hidden"></div>
+  </div>
+
+  <div id="endcard" class="hidden">
+    <div class="logo"><span class="logo-top">RuneCraft</span><span class="logo-bottom">Survivor</span></div>
+    <div id="end-title"></div>
+    <div id="end-stats"></div>
+    <div id="end-pitch" data-i18n="end_pitch"></div>
+    <button id="btn-cta" class="btn btn-gold btn-big" type="button" data-i18n="cta"></button>
+    <button id="btn-retry" class="btn-link" type="button" data-i18n="retry"></button>
+  </div>
+
+  <div id="toast"></div>
+  <div id="loading"><div class="spinner"></div></div>
+</div>
+
+<!-- Порядок важен: build.py склеивает скрипты в этом же порядке. -->
+<script src="js/config.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/data.js"></script>
+<script src="js/ad.js"></script>
+<script src="js/assets.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/render.js"></script>
+<script src="js/fx.js"></script>
+<script src="js/world.js"></script>
+<script src="js/entities.js"></script>
+<script src="js/spells.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/craft.js"></script>
+<script src="js/game.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

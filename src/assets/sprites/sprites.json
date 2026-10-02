@@ -1,0 +1,580 @@
+{
+ "pitch": 40.0,
+ "characters": {
+  "boss": {
+   "image": "boss.webp",
+   "k": 30,
+   "dirs": 5,
+   "anims": {
+    "attack": {
+     "y": 0,
+     "cell": [
+      186,
+      236
+     ],
+     "cols": 11,
+     "feet": [
+      81.5,
+      181.0
+     ],
+     "n": 6,
+     "loop": false,
+     "south": false,
+     "len": 1.25
+    },
+    "death": {
+     "y": 708,
+     "cell": [
+      248,
+      225
+     ],
+     "cols": 8,
+     "feet": [
+      107.0,
+      203.0
+     ],
+     "n": 8,
+     "loop": false,
+     "south": true,
+     "len": 1.6
+    },
+    "taunt": {
+     "y": 933,
+     "cell": [
+      163,
+      203
+     ],
+     "cols": 6,
+     "feet": [
+      88.5,
+      159.5
+     ],
+     "n": 6,
+     "loop": false,
+     "south": true,
+     "len": 1.03
+    },
+    "walk": {
+     "y": 1136,
+     "cell": [
+      145,
+      192
+     ],
+     "cols": 14,
+     "feet": [
+      66.0,
+      170.5
+     ],
+     "n": 6,
+     "loop": true,
+     "south": false,
+     "len": 1.07
+    }
+   }
+  },
+  "hero": {
+   "image": "hero.webp",
+   "k": 52,
+   "dirs": 5,
+   "anims": {
+    "cheer": {
+     "y": 0,
+     "cell": [
+      127,
+      160
+     ],
+     "cols": 10,
+     "feet": [
+      62.8,
+      132.3
+     ],
+     "n": 10,
+     "loop": true,
+     "south": true,
+     "len": 1.67
+    },
+    "death": {
+     "y": 160,
+     "cell": [
+      147,
+      185
+     ],
+     "cols": 7,
+     "feet": [
+      88.8,
+      157.3
+     ],
+     "n": 7,
+     "loop": false,
+     "south": true,
+     "len": 0.8
+    },
+    "idle": {
+     "y": 345,
+     "cell": [
+      138,
+      158
+     ],
+     "cols": 14,
+     "feet": [
+      58.8,
+      125.8
+     ],
+     "n": 4,
+     "loop": true,
+     "south": false,
+     "len": 1.07
+    },
+    "run": {
+     "y": 661,
+     "cell": [
+      141,
+      146
+     ],
+     "cols": 14,
+     "feet": [
+      59.2,
+      124.8
+     ],
+     "n": 8,
+     "loop": true,
+     "south": false,
+     "len": 0.8
+    }
+   }
+  },
+  "minion": {
+   "image": "minion.webp",
+   "k": 52,
+   "dirs": 5,
+   "anims": {
+    "attack": {
+     "y": 0,
+     "cell": [
+      114,
+      140
+     ],
+     "cols": 17,
+     "feet": [
+      37.5,
+      101.3
+     ],
+     "n": 6,
+     "loop": false,
+     "south": false,
+     "len": 0.8
+    },
+    "death": {
+     "y": 280,
+     "cell": [
+      143,
+      149
+     ],
+     "cols": 6,
+     "feet": [
+      76.5,
+      131.3
+     ],
+     "n": 6,
+     "loop": false,
+     "south": true,
+     "len": 1.3
+    },
+    "run": {
+     "y": 429,
+     "cell": [
+      105,
+      114
+     ],
+     "cols": 19,
+     "feet": [
+      36.5,
+      99.8
+     ],
+     "n": 8,
+     "loop": true,
+     "south": false,
+     "len": 0.8
+    }
+   }
+  },
+  "rogue": {
+   "image": "rogue.webp",
+   "k": 52,
+   "dirs": 5,
+   "anims": {
+    "attack": {
+     "y": 0,
+     "cell": [
+      127,
+      134
+     ],
+     "cols": 16,
+     "feet": [
+      40.0,
+      96.8
+     ],
+     "n": 6,
+     "loop": false,
+     "south": false,
+     "len": 1.0
+    },
+    "death": {
+     "y": 268,
+     "cell": [
+      136,
+      145
+     ],
+     "cols": 6,
+     "feet": [
+      72.5,
+      127.8
+     ],
+     "n": 6,
+     "loop": false,
+     "south": true,
+     "len": 1.3
+    },
+    "run": {
+     "y": 413,
+     "cell": [
+      99,
+      115
+     ],
+     "cols": 20,
+     "feet": [
+      34.5,
+      98.3
+     ],
+     "n": 8,
+     "loop": true,
+     "south": false,
+     "len": 0.8
+    }
+   }
+  }
+ },
+ "decor": {
+  "tree_default": {
+   "rect": [
+    0,
+    0,
+    141,
+    259
+   ],
+   "feet": [
+    70.5,
+    238.6
+   ],
+   "k": 40,
+   "radius": 2.15,
+   "height": 7.86
+  },
+  "tree_pine": {
+   "rect": [
+    143,
+    0,
+    90,
+    252
+   ],
+   "feet": [
+    43.2,
+    231.9
+   ],
+   "k": 40,
+   "radius": 1.13,
+   "height": 7.65
+  },
+  "tree_oak_dark": {
+   "rect": [
+    235,
+    0,
+    138,
+    231
+   ],
+   "feet": [
+    68.8,
+    196.5
+   ],
+   "k": 40,
+   "radius": 2.19,
+   "height": 5.89
+  },
+  "tree_oak": {
+   "rect": [
+    375,
+    0,
+    145,
+    227
+   ],
+   "feet": [
+    72.2,
+    195.0
+   ],
+   "k": 40,
+   "radius": 2.19,
+   "height": 5.89
+  },
+  "tree_pine_round": {
+   "rect": [
+    522,
+    0,
+    109,
+    200
+   ],
+   "feet": [
+    54.5,
+    177.4
+   ],
+   "k": 40,
+   "radius": 1.69,
+   "height": 5.89
+  },
+  "tree_fat": {
+   "rect": [
+    633,
+    0,
+    138,
+    187
+   ],
+   "feet": [
+    68.8,
+    165.3
+   ],
+   "k": 40,
+   "radius": 2.35,
+   "height": 5.41
+  },
+  "stone_tall": {
+   "rect": [
+    773,
+    0,
+    156,
+    147
+   ],
+   "feet": [
+    77.2,
+    106.0
+   ],
+   "k": 40,
+   "radius": 2.08,
+   "height": 3.68
+  },
+  "log": {
+   "rect": [
+    931,
+    0,
+    116,
+    135
+   ],
+   "feet": [
+    59.5,
+    78.5
+   ],
+   "k": 40,
+   "radius": 2.05,
+   "height": 1.5
+  },
+  "obelisk": {
+   "rect": [
+    1049,
+    0,
+    64,
+    120
+   ],
+   "feet": [
+    31.8,
+    93.5
+   ],
+   "k": 40,
+   "radius": 0.73,
+   "height": 3.15
+  },
+  "stone_large": {
+   "rect": [
+    1115,
+    0,
+    183,
+    106
+   ],
+   "feet": [
+    85.8,
+    69.0
+   ],
+   "k": 40,
+   "radius": 2.73,
+   "height": 1.12
+  },
+  "grass_leafs": {
+   "rect": [
+    1300,
+    0,
+    80,
+    70
+   ],
+   "feet": [
+    41.0,
+    37.9
+   ],
+   "k": 40,
+   "radius": 1.15,
+   "height": 0.5
+  },
+  "bush_large": {
+   "rect": [
+    1382,
+    0,
+    72,
+    65
+   ],
+   "feet": [
+    36.0,
+    47.4
+   ],
+   "k": 40,
+   "radius": 0.84,
+   "height": 1.09
+  },
+  "stump": {
+   "rect": [
+    1456,
+    0,
+    53,
+    60
+   ],
+   "feet": [
+    26.5,
+    33.9
+   ],
+   "k": 40,
+   "radius": 0.7,
+   "height": 0.78
+  },
+  "grass_large": {
+   "rect": [
+    1511,
+    0,
+    62,
+    56
+   ],
+   "feet": [
+    30.2,
+    30.5
+   ],
+   "k": 40,
+   "radius": 0.72,
+   "height": 0.89
+  },
+  "stone_small": {
+   "rect": [
+    1575,
+    0,
+    54,
+    49
+   ],
+   "feet": [
+    31.8,
+    25.4
+   ],
+   "k": 40,
+   "radius": 0.89,
+   "height": 0.67
+  },
+  "mushrooms": {
+   "rect": [
+    1631,
+    0,
+    44,
+    47
+   ],
+   "feet": [
+    19.2,
+    28.4
+   ],
+   "k": 40,
+   "radius": 0.6,
+   "height": 0.88
+  },
+  "bush": {
+   "rect": [
+    1677,
+    0,
+    68,
+    45
+   ],
+   "feet": [
+    34.0,
+    34.6
+   ],
+   "k": 40,
+   "radius": 0.79,
+   "height": 0.98
+  },
+  "grass": {
+   "rect": [
+    1747,
+    0,
+    55,
+    45
+   ],
+   "feet": [
+    29.5,
+    25.3
+   ],
+   "k": 40,
+   "radius": 0.96,
+   "height": 0.89
+  },
+  "flower_red": {
+   "rect": [
+    1804,
+    0,
+    26,
+    40
+   ],
+   "feet": [
+    16.2,
+    29.8
+   ],
+   "k": 40,
+   "radius": 0.31,
+   "height": 0.99
+  },
+  "flower_purple": {
+   "rect": [
+    1832,
+    0,
+    29,
+    36
+   ],
+   "feet": [
+    13.2,
+    25.9
+   ],
+   "k": 40,
+   "radius": 0.35,
+   "height": 0.82
+  },
+  "flower_yellow": {
+   "rect": [
+    1863,
+    0,
+    37,
+    28
+   ],
+   "feet": [
+    17.0,
+    17.2
+   ],
+   "k": 40,
+   "radius": 0.54,
+   "height": 0.54
+  }
+ },
+ "ground": {
+  "image": "ground.webp",
+  "tile": 16.0,
+  "k": 40
+ },
+ "decor_image": "decor.webp"
+}
